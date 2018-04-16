@@ -61,7 +61,7 @@ public class RuntimeUtils {
     static {
         try {
             //System.loadLibrary("jcocoa");
-            NativeUtils.loadLibraryFromJar("/libjcocoa.dylib");
+            NativeUtils.loadLibraryFromJar("/resources/libjcocoa.dylib");
             loaded = true;
         } catch (UnsatisfiedLinkError err){
             err.printStackTrace(System.err);

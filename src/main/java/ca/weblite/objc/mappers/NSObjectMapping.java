@@ -27,6 +27,8 @@ public class NSObjectMapping implements TypeMapping{
     @Override
     public Object cToJ(Object cVar, String signature, TypeMapping root) {
         //System.out.println("Mapping NSObject to Java "+cVar+" sig: "+signature);
+//    		System.getenv();
+//    		System.getProperties();
         Pointer cObj = Pointer.NULL;
         if ( Pointer.class.isInstance(cVar) ){
             cObj = (Pointer)cVar;
